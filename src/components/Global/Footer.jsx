@@ -1,0 +1,198 @@
+"use client";
+import Link from 'next/link';
+import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { BookOpen, Heart, Mail, Phone, MapPin, ArrowUp, Quote, Sparkles } from 'lucide-react';
+import Image from 'next/image';
+
+export default function Footer() {
+  return (
+    <footer className="bg-gradient-to-br from-slate-900 via-gray-900 to-black text-gray-300 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-orange-500/10 to-amber-500/10 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute bottom-0 right-0 w-96 h-96 bg-gradient-to-tl from-yellow-500/10 to-orange-500/10 rounded-full blur-3xl translate-x-1/2 translate-y-1/2"></div>
+      </div>
+
+      {/* Floating particles */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-orange-400 rounded-full animate-pulse opacity-60"></div>
+        <div className="absolute top-1/3 right-1/3 w-2 h-2 bg-amber-400 rounded-full animate-pulse opacity-40 delay-1000"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-yellow-400 rounded-full animate-pulse opacity-80 delay-2000"></div>
+      </div>
+
+      <div className="relative">
+        {/* Main Footer Content */}
+        <div className="container mx-auto px-6 pt-20 pb-12">
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-12">
+            
+            {/* Brand Section */}
+            <div className="lg:col-span-2 space-y-6">
+              <div className="flex items-center space-x-3 mb-6">
+                <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
+                  <BookOpen className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-bold text-white">Mahesh Manzar</h3>
+                  <p className="text-orange-400 text-sm font-medium">Autobiography</p>
+                </div>
+              </div>
+              
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                <div className="flex items-start gap-3 mb-4">
+                  <Quote className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
+                  <p className="text-gray-300 italic leading-relaxed">
+                    "A journey through politics, poetry, and the human spirit - discover the untold story of a life dedicated to service and literature."
+                  </p>
+                </div>
+                <p className="text-orange-300 font-medium text-sm">— From the Pages of Truth</p>
+              </div>
+
+              <div className="flex items-center gap-4 text-sm">
+                <div className="flex items-center gap-2">
+                  <Sparkles className="w-4 h-4 text-yellow-400" />
+                  <span className="text-gray-400">500+ Readers</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Heart className="w-4 h-4 text-red-400" />
+                  <span className="text-gray-400">Bestselling Author</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Book Details */}
+            <div>
+              <h4 className="text-white font-bold mb-4 text-lg flex items-center gap-2">
+                <BookOpen className="w-5 h-5 text-orange-400" />
+                THE BOOK
+              </h4>
+              <ul className="space-y-3">
+                <li><Link href="#about" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-orange-400 rounded-full"></span>About the Author</Link></li>
+                <li><Link href="#chapters" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-orange-400 rounded-full"></span>Key Chapters</Link></li>
+                <li><Link href="#testimonials" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-orange-400 rounded-full"></span>Reader Reviews</Link></li>
+                <li><Link href="#sample" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-orange-400 rounded-full"></span>Sample Pages</Link></li>
+                <li><Link href="#purchase" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-orange-400 rounded-full"></span>Get Your Copy</Link></li>
+              </ul>
+            </div>
+
+            {/* Author's Journey */}
+            <div>
+              <h4 className="text-white font-bold mb-4 text-lg flex items-center gap-2">
+                <Heart className="w-5 h-5 text-red-400" />
+                THE JOURNEY
+              </h4>
+              <ul className="space-y-3">
+                <li><Link href="#politics" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-red-400 rounded-full"></span>Political Career</Link></li>
+                <li><Link href="#poetry" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-red-400 rounded-full"></span>Poetry & Literature</Link></li>
+                <li><Link href="#rajiv" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-red-400 rounded-full"></span>With Rajiv Gandhi</Link></li>
+                <li><Link href="#sheila" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-red-400 rounded-full"></span>Sheila Dikshit Era</Link></li>
+                <li><Link href="#spirituality" className="hover:text-orange-400 transition-colors flex items-center gap-2"><span className="w-1 h-1 bg-red-400 rounded-full"></span>Spiritual Quest</Link></li>
+              </ul>
+            </div>
+
+            {/* Connect & Contact */}
+            <div>
+              <h4 className="text-white font-bold mb-4 text-lg flex items-center gap-2">
+                <Mail className="w-5 h-5 text-blue-400" />
+                CONNECT
+              </h4>
+              
+              {/* Contact Info */}
+              <div className="space-y-3 mb-6">
+                <div className="flex items-center gap-3 text-sm">
+                  <Mail className="w-4 h-4 text-blue-400" />
+                  <span>info@maheshmanzar.com</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <Phone className="w-4 h-4 text-green-400" />
+                  <span>+91 98765 43210</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm">
+                  <MapPin className="w-4 h-4 text-red-400" />
+                  <span>New Delhi, India</span>
+                </div>
+              </div>
+
+              {/* Social Media */}
+              <div className="space-y-4">
+                <h5 className="text-white font-semibold text-sm">FOLLOW THE AUTHOR</h5>
+                <div className="flex space-x-3">
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg flex items-center justify-center hover:from-blue-500 hover:to-blue-600 transition-all transform hover:scale-110">
+                    <FaFacebookF className="text-white text-sm" />
+                  </Link>
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-sky-500 to-sky-600 rounded-lg flex items-center justify-center hover:from-sky-400 hover:to-sky-500 transition-all transform hover:scale-110">
+                    <FaTwitter className="text-white text-sm" />
+                  </Link>
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-700 rounded-lg flex items-center justify-center hover:from-red-500 hover:to-red-600 transition-all transform hover:scale-110">
+                    <FaYoutube className="text-white text-sm" />
+                  </Link>
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg flex items-center justify-center hover:from-pink-500 hover:to-purple-500 transition-all transform hover:scale-110">
+                    <FaInstagram className="text-white text-sm" />
+                  </Link>
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-blue-700 to-blue-800 rounded-lg flex items-center justify-center hover:from-blue-600 hover:to-blue-700 transition-all transform hover:scale-110">
+                    <FaLinkedinIn className="text-white text-sm" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Newsletter Section */}
+        <div className="container mx-auto px-6 pb-12">
+          <div className="bg-gradient-to-r from-orange-500/20 to-amber-500/20 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+            <div className="text-center max-w-2xl mx-auto">
+              <h4 className="text-2xl font-bold text-white mb-3">Stay Updated</h4>
+              <p className="text-gray-300 mb-6">Get notified about new books, events, and exclusive content from Mahesh Manzar</p>
+              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input 
+                  type="email" 
+                  placeholder="Enter your email" 
+                  className="flex-1 px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg text-white placeholder:text-gray-400 focus:outline-none focus:border-orange-400 focus:ring-2 focus:ring-orange-400/20"
+                />
+                <button className="px-6 py-3 bg-gradient-to-r from-orange-500 to-amber-500 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-amber-600 transition-all transform hover:scale-105 shadow-lg">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Copyright */}
+        <div className="container mx-auto px-6 border-t border-gray-800 py-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-gray-500 text-sm">
+              © 2024 Mahesh Manzar Autobiography. All rights reserved. | 
+              <Link href="#privacy" className="hover:text-orange-400 ml-1">Privacy Policy</Link> | 
+              <Link href="#terms" className="hover:text-orange-400 ml-1">Terms of Service</Link>
+            </p>
+            <div className="flex items-center gap-4 text-sm text-gray-500">
+              <span>Published with ❤️ in India</span>
+              <div className="flex items-center gap-1">
+                <BookOpen className="w-4 h-4 text-orange-400" />
+                <span>ISBN: 978-XXX-XXX-XXXX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll to Top Button */}
+      <Link href="#top">
+        <div className="fixed bottom-8 right-8 bg-gradient-to-r from-orange-500 to-amber-500 w-12 h-12 rounded-full flex items-center justify-center text-white hover:from-orange-600 hover:to-amber-600 transition-all transform hover:scale-110 shadow-2xl z-50 group">
+          <ArrowUp className="w-5 h-5 group-hover:animate-bounce" />
+        </div>
+      </Link>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px); }
+          50% { transform: translateY(-10px); }
+        }
+        
+        .animate-float {
+          animation: float 3s ease-in-out infinite;
+        }
+      `}</style>
+    </footer>
+  );
+}
