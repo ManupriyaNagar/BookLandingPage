@@ -74,7 +74,7 @@ export default function Hero1() {
       {/* Modal Form */}
       {showForm && (
         <div className="fixed inset-0  bg-opacity-60 z-50 flex items-center justify-center">
-          <div className="relative bg-white max-w-3xl w-full p-6 rounded-xl shadow-lg">
+          <div className="relative bg-white max-w-xl w-full p-6 rounded-xl shadow-lg">
             <button
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
               onClick={() => setShowForm(false)}

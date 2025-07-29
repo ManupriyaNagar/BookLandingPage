@@ -49,7 +49,7 @@ export default function BookOrderForm() {
   };
 
   return (
-    <section className="bg-white py-12 px-6 md:px-12 max-w-3xl mx-auto rounded-2xl ">
+    <section className="bg-white py-12 px-6 md:px-12 max-w-xl mx-auto rounded-2xl ">
       <h2 className="text-2xl md:text-3xl font-bold mb-6 text-center text-gray-800">
         Book Order Form
       </h2>
