@@ -240,22 +240,18 @@ export default function Footer() {
               Terms of Service
             </Link>
           </p>
-          <div className="flex items-center gap-4 text-sm text-gray-500">
-           
-         <div className="flex items-center gap-2 text-sm text-gray-500">
-  <span>Powered By</span>
-  <a
-    href="/https://www.rbshstudio.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-orange-400 transition-colors underline"
-  >
-    RBSH Studio
-  </a>
-</div>
-
-
-
+          <div className="flex items-center text-sm text-gray-500">
+            <div className="flex items-center gap-2 text-sm text-gray-500 z-10">
+              <span>Powered By</span>
+              <a
+                href="https://www.rbshstudio.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors underline"
+              >
+                RBSH Studio
+              </a>
+            </div>
           </div>
         </div>
       </div>
