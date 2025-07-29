@@ -1,10 +1,11 @@
 'use client';
 
 import { Check } from "lucide-react";
+import Link from "next/link";
 
 export default function SecureYourCopy() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-white to-neutral-50 text-center">
+    <section id="#idz-pricing" className="py-20 px-4 bg-gradient-to-b from-white to-neutral-50 text-center">
       <h2 className="text-4xl md:text-5xl font-extrabold text-neutral-900 mb-3">
         Secure Your Copy
       </h2>
@@ -31,9 +32,11 @@ export default function SecureYourCopy() {
           </li>
         </ul>
 
-        <button className="bg-orange-600 hover:bg-orange-700 active:scale-[.98] transition-transform text-white font-semibold w-full py-3 rounded-lg text-lg shadow-md">
-          Order Now
-        </button>
+      <Link href="/form">
+  <button className="bg-orange-600 hover:bg-orange-700 active:scale-[.98] transition-transform text-white font-semibold w-full py-3 rounded-lg text-lg shadow-md">
+    Order Now
+  </button>
+  </Link>
 
         <p className="text-xs text-gray-400 mt-5">
           Secure payment • Ships within 3–5 business days

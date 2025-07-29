@@ -69,7 +69,7 @@ export default function MeetAuthor() {
         <div className="flex-1 max-w-sm">
           <div className="rounded-xl overflow-hidden shadow-md">
             <Image
-              src="/sir.png" // Update path accordingly
+              src="/maheshji.png" // Update path accordingly
               alt="Author Mahesh Manzar"
               width={500}
               height={600}

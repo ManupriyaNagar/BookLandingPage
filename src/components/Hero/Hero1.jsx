@@ -13,21 +13,25 @@ export default function Hero1() {
         <div className="absolute inset-0 bg-gradient-to-br from-[#ed9a9a] via-[#ed9a9a] to-[#fac673] opacity-40 z-0"></div>
 
         {/* Navigation */}
-        <div className="z-10 relative border-b border-white/30 py-6">
+        <div className="relative border-b border-white/30 py-6">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex-shrink-0">
               <Link href="#idz-header"></Link>
             </div>
-            <nav className="hidden md:flex space-x-6">
+            <nav className="md:flex space-x-6">
               <Link href="#idz-header" className="text-white hover:text-yellow-500">Home</Link>
               <Link href="#idz-features" className="text-white hover:text-yellow-500">About</Link>
               <Link href="#idz-about" className="text-white hover:text-yellow-500">Meet Author</Link>
               <Link href="#idz-pricing" className="text-white hover:text-yellow-500">Pricing</Link>
-              <button className="border border-white text-white px-4 py-2 rounded-full hover:text-yellow-500">Purchase Now!</button>
+              
+    
+
             </nav>
+           
             <div className="md:hidden">
               <button className="text-white text-2xl">&#9776;</button>
             </div>
+           
           </div>
         </div>
 
@@ -45,10 +49,14 @@ export default function Hero1() {
               </p>
             </div>
             <div className="flex space-x-4">
-              <button className="bg-[#c36829] text-white px-6 py-3 text-lg font-bold rounded hover:opacity-80 flex items-center">
-                <i className="fas fa-shopping-cart mr-2"></i> Buy Now for <span className='text-xl'>  ₹695 </span>
-              </button>
-             
+          
+
+<Link href="/form">
+  <button className="bg-[#c36829] text-white px-6 py-3 text-lg font-bold rounded hover:opacity-80 flex items-center">
+    <i className="fas fa-shopping-cart mr-2"></i> Buy Now for <span className='text-xl'> ₹695 </span>
+  </button>
+</Link>
+
             </div>
           </div>
 
