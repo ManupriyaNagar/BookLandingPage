@@ -1,7 +1,11 @@
+'use client';
 import Image from 'next/image';
-import Link from 'next/link';
+import { useState } from 'react';
+import BookOrderForm from './BookOrderForm';
 
 export default function Hero1() {
+  const [showForm, setShowForm] = useState(false);
+
   return (
     <div className="font-roboto text-[#959595] text-[18px] leading-8">
       {/* Header */}
@@ -16,22 +20,18 @@ export default function Hero1() {
         <div className="relative border-b border-white/30 py-6">
           <div className="container mx-auto flex justify-between items-center">
             <div className="flex-shrink-0">
-              <Link href="#idz-header"></Link>
+              <a href="#idz-header"></a>
             </div>
             <nav className="md:flex space-x-6">
-              <Link href="#idz-header" className="text-white hover:text-yellow-500">Home</Link>
-              <Link href="#idz-features" className="text-white hover:text-yellow-500">About</Link>
-              <Link href="#idz-about" className="text-white hover:text-yellow-500">Meet Author</Link>
-              <Link href="#idz-pricing" className="text-white hover:text-yellow-500">Pricing</Link>
-              
-    
-
+              <a href="#idz-header" className="text-white hover:text-yellow-500">Home</a>
+              <a href="#idz-features" className="text-white hover:text-yellow-500">About</a>
+              <a href="#idz-about" className="text-white hover:text-yellow-500">Meet Author</a>
+              <a href="#idz-pricing" className="text-white hover:text-yellow-500">Pricing</a>
             </nav>
-           
+
             <div className="md:hidden">
               <button className="text-white text-2xl">&#9776;</button>
             </div>
-           
           </div>
         </div>
 
@@ -49,19 +49,17 @@ export default function Hero1() {
               </p>
             </div>
             <div className="flex space-x-4">
-          
-
-<Link href="/form">
-  <button className="bg-[#c36829] text-white px-6 py-3 text-lg font-bold rounded hover:opacity-80 flex items-center">
-    <i className="fas fa-shopping-cart mr-2"></i> Buy Now for <span className='text-xl'> ₹695 </span>
-  </button>
-</Link>
-
+              <button
+                onClick={() => setShowForm(true)}
+                className="bg-[#c36829] text-white px-6 py-3 text-lg font-bold rounded hover:opacity-80 flex items-center"
+              >
+                <i className="fas fa-shopping-cart mr-2"></i> Buy Now for <span className='text-xl'> ₹695 </span>
+              </button>
             </div>
           </div>
 
           {/* Book Image */}
-          <div className="md:w-1/2 flex justify-center items-end  md:mt-0 h-[60vh] ">
+          <div className="md:w-1/2 flex justify-center items-end md:mt-0 h-[60vh]">
             <Image
               src="/bookmockup.png"
               alt="book cover"
@@ -72,6 +70,21 @@ export default function Hero1() {
           </div>
         </div>
       </header>
+
+      {/* Modal Form */}
+      {showForm && (
+        <div className="fixed inset-0  bg-opacity-60 z-50 flex items-center justify-center">
+          <div className="relative bg-white max-w-3xl w-full p-6 rounded-xl shadow-lg">
+            <button
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-2xl"
+              onClick={() => setShowForm(false)}
+            >
+              &times;
+            </button>
+            <BookOrderForm />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
