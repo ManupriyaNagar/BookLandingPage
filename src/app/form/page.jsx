@@ -26,7 +26,7 @@ export default function BookOrderForm() {
     setMessage(null);
 
     try {
-      const res = await fetch('http://localhost:5001/api/book-orders', {
+      const res = await fetch('https://booklandingpagebd-1.onrender.com/api/book-orders', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),

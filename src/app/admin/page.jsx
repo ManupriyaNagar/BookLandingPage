@@ -11,7 +11,7 @@ export default function AdminPanel() {
 
   const fetchApplications = async () => {
     try {
-      const res = await fetch('http://localhost:5001/api/book-orders');
+      const res = await fetch('https://booklandingpagebd-1.onrender.com/api/book-orders');
       if (!res.ok) {
         throw new Error(`HTTP error! status: ${res.status}`);
       }
