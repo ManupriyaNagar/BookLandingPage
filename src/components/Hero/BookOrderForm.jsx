@@ -154,6 +154,7 @@ export default function BookOrderForm() {
           </button>
         </div>
       </form>
+      <h1>Have a nice day</h1>
     </section>
   );
 }

@@ -153,6 +153,7 @@ export default function BookOrderForm() {
             {loading ? 'Submitting...' : 'Submit Order'}
           </button>
         </div>
+        <div>Have a nice day</div>
       </form>
     </section>
   );
