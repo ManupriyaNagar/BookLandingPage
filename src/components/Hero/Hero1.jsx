@@ -18,20 +18,16 @@ export default function Hero1() {
 
         {/* Navigation */}
         <div className="relative border-b border-white/30 py-6">
-          <div className="container mx-auto flex justify-between items-center">
-            <div className="flex-shrink-0">
-              <a href="#idz-header"></a>
-            </div>
-            <nav className="md:flex space-x-6">
+          <div className="container mx-auto flex justify-center items-center">
+           
+            <nav className="md:flex space-x-6 text-xl">
               <a href="#idz-header" className="text-white hover:text-yellow-500">Home</a>
               <a href="#idz-features" className="text-white hover:text-yellow-500">About</a>
               <a href="#idz-about" className="text-white hover:text-yellow-500">Meet Author</a>
               <a href="#idz-pricing" className="text-white hover:text-yellow-500">Pricing</a>
             </nav>
 
-            <div className="md:hidden">
-              <button className="text-white text-2xl">&#9776;</button>
-            </div>
+           
           </div>
         </div>
 
@@ -59,7 +55,7 @@ export default function Hero1() {
           </div>
 
           {/* Book Image */}
-          <div className="md:w-1/2 flex justify-center items-end md:mt-0 h-[60vh]">
+          <div className="md:w-1/2 flex justify-center items-end md:mt-0 h-[63vh]">
             <Image
               src="/bookmockup.png"
               alt="book cover"

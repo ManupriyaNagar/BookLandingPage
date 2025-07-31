@@ -4,7 +4,7 @@ import { BookOpen, Heart, Award } from 'lucide-react';
 
 export default function AboutBook() {
   return (
-    <section className="bg-[#fdfcf9] py-20 px-6 md:px-16">
+    <section className="bg-[#fdfcf9] py-20 px-6 md:px-16 ">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row gap-12">
         {/* Left Column */}
         <div className="flex-1">

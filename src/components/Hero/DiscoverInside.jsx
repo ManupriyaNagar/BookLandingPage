@@ -43,7 +43,8 @@ export default function DiscoverInside() {
   const rightFeatures = features.slice(4, 7); // Last 3 features
 
   return (
-    <section id="idz-about" className="py-14 bg-white">
+    <section id="idz-about" className="pb-10 bg-white">
+      <img src="/aboutbg.png" alt="" className="h-60 w-full -mt-30"/>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-16 space-y-6">
