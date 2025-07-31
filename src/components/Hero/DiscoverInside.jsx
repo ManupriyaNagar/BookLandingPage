@@ -1,85 +1,104 @@
-import Image from 'next/image';
-import { FaTrophy,FaPencilAlt, FaUniversity, FaGraduationCap, FaTruck, FaLock, FaUndo ,FaDove,FaFlag,FaFeatherAlt } from 'react-icons/fa';
-import { MdSelfImprovement } from "react-icons/md";
+import {
+  FaUniversity,
+  FaDove,
+  FaFlag,
+  FaFeatherAlt,
+} from 'react-icons/fa';
+import { MdSelfImprovement, MdFamilyRestroom } from 'react-icons/md';
+import { PiFlowerLotus } from 'react-icons/pi';
+
+const features = [
+  {
+    icon: <FaDove className="w-5 h-5" />,
+    title: 'First Love & Loss',
+  },
+  {
+    icon: <FaUniversity className="w-5 h-5" />,
+    title: 'Early Days With Youth Congress',
+  },
+  {
+    icon: <FaFlag className="w-5 h-5" />,
+    title: 'Rise as a poet and public speaker',
+  },
+  {
+    icon: <MdSelfImprovement className="w-5 h-5" />,
+    title: "The Fall of Congress from a loyalist's eye",
+  },
+  {
+    icon: <FaFeatherAlt className="w-5 h-5" />,
+    title: 'Poetic tributes and relationships',
+  },
+  {
+    icon: <MdFamilyRestroom className="w-5 h-5" />,
+    title: 'Family turmoil',
+  },
+  {
+    icon: <PiFlowerLotus className="w-5 h-5" />,
+    title: 'In search of enlightenment',
+  },
+];
 
 export default function DiscoverInside() {
-  return (
-    <section id="idz-about" className="py-20">
-      <div className="container mx-auto grid md:grid-cols-2 gap-10 items-start relative">
-        {/* Left Content */}
-        <div>
-          <div className="relative mb-6">
-            <div className="absolute -top-12 text-[120px] text-gray-200 -z-10">
-              <FaPencilAlt />
-            </div>
-            <h2 className="text-[42px] font-bold text-gray-800">Discover what's Inside</h2>
-          </div>
-          <p className="text-gray-500 mb-8 max-w-xl">
-            7 Decades. 7 Acts. A Nation's History Through One Life
-          </p>
+  const leftFeatures = features.slice(0, 4); // First 4 features
+  const rightFeatures = features.slice(4, 7); // Last 3 features
 
-          {/* Feature List */}
-          <ul className="space-y-8 text-xl">
-            <li className="flex items-center">
-              <div className="bg-[#f3a612] text-white p-4 rounded-full mr-4">
-               <FaDove className="text-xl text-[#fffff] " />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800  text-xl">First Love & Loss</h4>
-              </div>
-            </li>
-            <li className="flex items-center">
-              <div className="bg-[#f3a612] text-white p-4 rounded-full mr-4">
-                <FaUniversity className="text-xl" />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800">Early Days With Youth Congress</h4>
-              
-              </div>
-            </li>
-              <li className="flex items-center">
-              <div className="bg-[#f3a612] text-white p-4 rounded-full mr-4">
-                <FaFlag className="text-xl" />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800 ">Rise as a poet and public speaker</h4>
-              </div>
-            </li>
-              <li className="flex items-center">
-              <div className="bg-[#f3a612] text-white p-3 rounded-full mr-4">
-               
-<MdSelfImprovement className="text-3xl" />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800">The Fail of congress from a loyalist's view</h4>
-              </div>
-            </li>
-            <li className="flex items-center">
-              <div className="bg-[#f3a612] text-white p-4 rounded-full mr-4">
-              <FaFeatherAlt className="text-xl" />
-              </div>
-              <div>
-                <h4 className="font-bold text-gray-800 ">Poetic tributes relationships, and  redemption</h4>
-             
-              </div>
-            </li>
-          </ul>
+  return (
+    <section id="idz-about" className="py-14 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Header */}
+        <div className="text-center mb-16 space-y-6">
+         
+
+          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
+            Discover what's Inside
+          </h2>
+
+          <p className="text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto">
+            <span className="font-semibold text-gray-900">7 Decades.</span> A Nation's History Through Author's Life
+          </p>
         </div>
 
-        {/* Right Image */}
-        <div className="flex justify-center">
-          <Image 
-            src="/images/about-img.png" 
-            alt="About illustration"
-            width={500}
-            height={500}
-            className="object-contain"
-          />
+        {/* Features Grid - 4:3 ratio */}
+        <div className="grid lg:grid-cols-7 gap-12 items-start">
+          {/* Left Column - 4 features */}
+          <div className="lg:col-span-4 space-y-6">
+            {leftFeatures.map((feature, index) => (
+              <div
+                key={index}
+                className="group flex items-start gap-4 p-4 rounded-xl bg-orange-50 transition-colors duration-200"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 group-hover:bg-orange-200 transition-colors duration-200">
+                  {feature.icon}
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-orange-600 transition-colors duration-200">
+                    {feature.title}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Right Column - 3 features */}
+          <div className="lg:col-span-3 space-y-6">
+            {rightFeatures.map((feature, index) => (
+              <div
+                key={index + 4}
+                className="group flex items-start gap-4 p-4 rounded-xl bg-orange-50 transition-colors duration-200"
+              >
+                <div className="flex-shrink-0 w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center text-orange-600 group-hover:bg-orange-200 transition-colors duration-200">
+                  {feature.icon}
+                </div>
+                <div className="flex-1 pt-1">
+                  <h3 className="text-xl font-semibold text-gray-900 group-hover:text-orange-600 transition-colors duration-200">
+                    {feature.title}
+                  </h3>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-
-      {/* Order Features */}
-     
     </section>
   );
 }

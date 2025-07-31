@@ -15,7 +15,7 @@ export default function SecureYourCopy() {
       </p>
 
       <div className="mx-auto max-w-md bg-white border border-neutral-200 rounded-2xl shadow-xl p-8">
-        <h3 className="text-3xl font-bold text-neutral-900 mb-2">₹695</h3>
+        <h3 className="text-3xl font-bold text-neutral-900 mb-2">₹435</h3>
         <p className="text-gray-500 mb-6">Paperback • First Edition</p>
 
         <ul className="text-left text-sm text-gray-800 space-y-4 mb-6">

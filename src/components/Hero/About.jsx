@@ -13,10 +13,10 @@ export default function AboutBook() {
             An honest and intimate account of a life lived in the shadows of power
           </p>
           <p className="text-gray-800 mb-4">
-            "Confessions of an Unknown Congressman" is not just another political memoir. It's a deeply personal journey through seven decades of Indian history, told through the eyes of a man who witnessed it all from the inside.
+            "Confessions of an Unknown Congressman" is not just another political memoir. It's a deeply personal journey through seven decades of Indian history, told through the eyes of a man who witnessed it all from inside.
           </p>
           <p className="text-gray-800">
-            From his early days with the Youth Congress to intimate moments with Rajiv and Sonia Gandhi, from the heights of political influence to spiritual pilgrimages to Mt. Kailash, Mahesh Manzar's story is one of unfiltered truth, poetic beauty, and human resilience.
+            From his early days with the Youth Congress to intimate moments with Rajiv Gandhi and Rajesh Khanna, from the heights of political influence to spiritual pilgrimages to Mt. Kailash, Mahesh Manzar's story is one of unfiltered truth, poetic beauty, and human resilience.
           </p>
         </div>
 

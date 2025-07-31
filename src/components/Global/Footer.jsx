@@ -231,7 +231,7 @@ export default function Footer() {
       <div className="container mx-auto px-6 border-t border-gray-800 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2024 Mahesh Manzar Autobiography. All rights reserved. |
+            © 2025 Mahesh Manzar Autobiography. All rights reserved. |
             <Link href="#privacy" className="hover:text-orange-400 ml-1">
               Privacy Policy
             </Link>{" "}

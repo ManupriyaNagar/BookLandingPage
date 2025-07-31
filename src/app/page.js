@@ -3,6 +3,7 @@ import DiscoverInside from "@/components/Hero/DiscoverInside";
 import HeroSection from "@/components/Hero/Hero";
 import Hero1 from "@/components/Hero/Hero1";
 import MeetAuthor from "@/components/Hero/MeetAuthor";
+import PhotoGallery from "@/components/Hero/Photo";
 import QuoteHighlight from "@/components/Hero/QuoteHighlight";
 import SecureYourCopy from "@/components/Hero/SecureCopy";
 
@@ -20,6 +21,7 @@ export default function Home() {
     <QuoteHighlight/>
     <TestimonialsSection/>
     <MeetAuthor/>
+    <PhotoGallery/>
     <SecureYourCopy/>
  
    </div>

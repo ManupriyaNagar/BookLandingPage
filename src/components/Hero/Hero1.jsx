@@ -43,7 +43,7 @@ export default function Hero1() {
               An Untold Life in Indian Politics & Poetry – Read the Story That Was Never Officially Written
             </h1>
             <div>
-              <p className="font-bold mb-0">Read the Story That Was Never Officially Written</p>
+             
               <p className="uppercase text-sm">
                 From the inner circles of power to poetic introspection – Mahesh Manzar’s life story is a journey through politics, poetry, love, loss, and redemption.
               </p>
@@ -53,7 +53,7 @@ export default function Hero1() {
                 onClick={() => setShowForm(true)}
                 className="bg-[#c36829] text-white px-6 py-3 text-lg font-bold rounded hover:opacity-80 flex items-center"
               >
-                <i className="fas fa-shopping-cart mr-2"></i> Buy Now for <span className='text-xl'> ₹695 </span>
+                <i className="fas fa-shopping-cart mr-2"></i> Buy Now for <span className='text-xl'> ₹435 </span>
               </button>
             </div>
           </div>
