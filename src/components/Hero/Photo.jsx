@@ -11,8 +11,9 @@ export default function TwoColFlexGallery({
   ],
 }) {
   return (
-    <section className="py-12 px-4 md:px-20 bg-white">
-      <div className="flex flex-wrap -mx-2">
+    <section className=" bg-white">
+            <img src="/aboutbg.png" alt="" className="h-60 w-full -mt-30"/>
+      <div className="flex flex-wrap -mx-2 md:px-20 py-4">
         {photos.map((item, idx) => (
           <div key={idx} className="w-full sm:w-1/2 px-2 mb-8">
             <div className="relative w-full h-96 rounded-lg overflow-hidden shadow-md">
