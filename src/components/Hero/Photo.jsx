@@ -22,7 +22,7 @@ export default function TwoColFlexGallery({
       <img src="/aboutbg.png" alt="" className="h-60 w-full object-cover" />
 
       {/* Gallery Grid */}
-      <div className="flex flex-wrap -mx-2 px-4 md:px-20 py-8">
+      <div className="flex flex-wrap  px-4 md:px-20 py-8">
         {photos.map((item, idx) => (
           <div key={idx} className="w-full sm:w-1/2 px-2 mb-10">
             <div className="relative w-full h-72 sm:h-96 rounded-lg overflow-hidden shadow-md">

@@ -15,7 +15,6 @@ export default function Home() {
    <div>
        <Hero1/>
 
-    {/* <HeroSection/> */}
     <AboutBook/>
     <DiscoverInside/>
     <QuoteHighlight/>

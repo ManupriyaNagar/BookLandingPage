@@ -61,7 +61,7 @@ export default function Hero1() {
               alt="book cover"
               width={400}
               height={600}
-              className="h-[125vh] w-full object-contain -mb-69"
+              className="h-[125vh] w-full object-contain md:-mb-59 -mb-79 "
             />
           </div>
         </div>
