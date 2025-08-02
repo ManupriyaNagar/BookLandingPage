@@ -38,24 +38,20 @@ export default function Footer() {
       <div className="relative">
         {/* Main Footer Content */}
         <div className="container mx-auto px-6 pt-20 pb-12">
-          <div className="grid lg:grid-cols-5 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-12 text-center md:text-left">
             {/* Brand Section */}
-            <div className="lg:col-span-2 space-y-6">
+            <div className="lg:col-span-2 space-y-6 flex flex-col items-center md:items-start">
               <div className="flex items-center space-x-3 mb-6">
                 <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl flex items-center justify-center shadow-lg">
                   <BookOpen className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-white">
-                    Mahesh Manzar
-                  </h3>
-                  <p className="text-orange-400 text-sm font-medium">
-                    Autobiography
-                  </p>
+                  <h3 className="text-2xl font-bold text-white">Mahesh Manzar</h3>
+                  <p className="text-orange-400 text-sm font-medium">Autobiography</p>
                 </div>
               </div>
 
-              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10 text-center md:text-left">
                 <div className="flex items-start gap-3 mb-4">
                   <Quote className="w-6 h-6 text-orange-400 mt-1 flex-shrink-0" />
                   <p className="text-gray-300 italic leading-relaxed">
@@ -64,12 +60,10 @@ export default function Footer() {
                     literature."
                   </p>
                 </div>
-                <p className="text-orange-300 font-medium text-sm">
-                  — From the Pages of Truth
-                </p>
+                <p className="text-orange-300 font-medium text-sm">— From the Pages of Truth</p>
               </div>
 
-              <div className="flex items-center gap-4 text-sm">
+              <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-4 text-sm">
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-4 h-4 text-yellow-400" />
                   <span className="text-gray-400">500+ Readers</span>
@@ -83,36 +77,25 @@ export default function Footer() {
 
             {/* Book Details */}
             <div>
-              <h4 className="text-white font-bold mb-4 text-lg flex items-center gap-2">
+              <h4 className="text-white font-bold mb-4 text-lg flex items-center justify-center md:justify-start gap-2">
                 <BookOpen className="w-5 h-5 text-orange-400" />
                 THE BOOK
               </h4>
               <ul className="space-y-3">
                 <li>
-                  <Link
-                    href="#about"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
+                  <Link href="#about" className="hover:text-orange-400 transition-colors flex items-center justify-center md:justify-start gap-2">
                     <span className="w-1 h-1 bg-orange-400 rounded-full"></span>
                     About the Author
                   </Link>
                 </li>
-
                 <li>
-                  <Link
-                    href="#testimonials"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
+                  <Link href="#testimonials" className="hover:text-orange-400 transition-colors flex items-center justify-center md:justify-start gap-2">
                     <span className="w-1 h-1 bg-orange-400 rounded-full"></span>
                     Reader Reviews
                   </Link>
                 </li>
-
                 <li>
-                  <Link
-                    href="/form"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
+                  <Link href="/form" className="hover:text-orange-400 transition-colors flex items-center justify-center md:justify-start gap-2">
                     <span className="w-1 h-1 bg-orange-400 rounded-full"></span>
                     Get Your Copy
                   </Link>
@@ -122,73 +105,40 @@ export default function Footer() {
 
             {/* Author's Journey */}
             <div>
-              <h4 className="text-white font-bold mb-4 text-lg flex items-center gap-2">
+              <h4 className="text-white font-bold mb-4 text-lg flex items-center justify-center md:justify-start gap-2">
                 <Heart className="w-5 h-5 text-red-400" />
                 THE JOURNEY
               </h4>
               <ul className="space-y-3">
-                <li>
-                  <Link
-                    href="#politics"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
-                    <span className="w-1 h-1 bg-red-400 rounded-full"></span>
-                    Political Career
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#poetry"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
-                    <span className="w-1 h-1 bg-red-400 rounded-full"></span>
-                    Poetry & Literature
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#rajiv"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
-                    <span className="w-1 h-1 bg-red-400 rounded-full"></span>
-                    With Rajiv Gandhi
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#sheila"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
-                    <span className="w-1 h-1 bg-red-400 rounded-full"></span>
-                    Sheila Dikshit Era
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#spirituality"
-                    className="hover:text-orange-400 transition-colors flex items-center gap-2"
-                  >
-                    <span className="w-1 h-1 bg-red-400 rounded-full"></span>
-                    Spiritual Quest
-                  </Link>
-                </li>
+                {[
+                  { href: "#politics", text: "Political Career" },
+                  { href: "#poetry", text: "Poetry & Literature" },
+                  { href: "#rajiv", text: "With Rajiv Gandhi" },
+                  { href: "#sheila", text: "Sheila Dikshit Era" },
+                  { href: "#spirituality", text: "Spiritual Quest" },
+                ].map((item) => (
+                  <li key={item.href}>
+                    <Link href={item.href} className="hover:text-orange-400 transition-colors flex items-center justify-center md:justify-start gap-2">
+                      <span className="w-1 h-1 bg-red-400 rounded-full"></span>
+                      {item.text}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
 
             {/* Connect & Contact */}
             <div>
-              <h4 className="text-white font-bold mb-4 text-lg flex items-center gap-2">
+              <h4 className="text-white font-bold mb-4 text-lg flex items-center justify-center md:justify-start gap-2">
                 <Mail className="w-5 h-5 text-blue-400" />
                 CONNECT
               </h4>
 
-              {/* Contact Info */}
-              <div className="space-y-3 mb-6">
+              <div className="space-y-3 mb-6 flex flex-col items-center md:items-start">
                 <div className="flex items-center gap-3 text-sm">
                   <Mail className="w-4 h-4 text-blue-400" />
                   <span>info@maheshmanzar.com</span>
                 </div>
-
                 <div className="flex items-center gap-3 text-sm">
                   <MapPin className="w-4 h-4 text-red-400" />
                   <span>New Delhi, India</span>
@@ -197,27 +147,17 @@ export default function Footer() {
 
               {/* Social Media */}
               <div className="space-y-4">
-                <h5 className="text-white font-semibold text-sm">
+                <h5 className="text-white font-semibold text-sm text-center md:text-left">
                   FOLLOW THE AUTHOR
                 </h5>
-                <div className="flex space-x-3">
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg flex items-center justify-center hover:from-blue-500 hover:to-blue-600 transition-all transform hover:scale-110"
-                  >
+                <div className="flex justify-center md:justify-start space-x-3">
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg flex items-center justify-center hover:from-blue-500 hover:to-blue-600 transition-all transform hover:scale-110">
                     <FaFacebookF className="text-white text-sm" />
                   </Link>
-
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-700 rounded-lg flex items-center justify-center hover:from-red-500 hover:to-red-600 transition-all transform hover:scale-110"
-                  >
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-red-600 to-red-700 rounded-lg flex items-center justify-center hover:from-red-500 hover:to-red-600 transition-all transform hover:scale-110">
                     <FaYoutube className="text-white text-sm" />
                   </Link>
-                  <Link
-                    href="#"
-                    className="w-10 h-10 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg flex items-center justify-center hover:from-pink-500 hover:to-purple-500 transition-all transform hover:scale-110"
-                  >
+                  <Link href="#" className="w-10 h-10 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg flex items-center justify-center hover:from-pink-500 hover:to-purple-500 transition-all transform hover:scale-110">
                     <FaInstagram className="text-white text-sm" />
                   </Link>
                 </div>
@@ -229,7 +169,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="container mx-auto px-6 border-t border-gray-800 py-8">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-4">
           <p className="text-gray-500 text-sm">
             © 2025 Mahesh Manzar Autobiography. All rights reserved. |
             <Link href="#privacy" className="hover:text-orange-400 ml-1">
@@ -240,18 +180,16 @@ export default function Footer() {
               Terms of Service
             </Link>
           </p>
-          <div className="flex items-center text-sm text-gray-500">
-            <div className="flex items-center gap-2 text-sm text-gray-500 z-10">
-              <span>Powered By</span>
-              <a
-                href="https://www.rbshstudio.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-orange-400 transition-colors underline"
-              >
-                RBSH Studio
-              </a>
-            </div>
+          <div className="flex items-center gap-2 text-sm text-gray-500">
+            <span>Powered By</span>
+            <a
+              href="https://www.rbshstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-orange-400 transition-colors underline"
+            >
+              RBSH Studio
+            </a>
           </div>
         </div>
       </div>
@@ -273,7 +211,6 @@ export default function Footer() {
             transform: translateY(-10px);
           }
         }
-
         .animate-float {
           animation: float 3s ease-in-out infinite;
         }

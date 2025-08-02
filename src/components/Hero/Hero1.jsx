@@ -19,7 +19,7 @@ export default function Hero1() {
         {/* Navigation */}
         <div className="relative border-b border-white/30 py-6">
           <div className="container mx-auto flex justify-center items-center">
-           
+
             <nav className="md:flex space-x-6 text-xl">
               <a href="#idz-header" className="text-white hover:text-yellow-500">Home</a>
               <a href="#idz-features" className="text-white hover:text-yellow-500">About</a>
@@ -27,14 +27,14 @@ export default function Hero1() {
               <a href="#idz-pricing" className="text-white hover:text-yellow-500">Pricing</a>
             </nav>
 
-           
+
           </div>
         </div>
 
         {/* Hero Section */}
         <div className="flex-grow container mx-auto relative z-10 flex flex-col md:flex-row justify-between items-end md:items-center pb-0 pt-12">
           {/* Left Text */}
-          <div className="md:w-1/2 space-y-6 text-white">
+          <div className="md:w-1/2 space-y-6 text-white px-12">
             <h1 className="text-4xl md:text-[42px] font-bold leading-tight">
               An Untold Life in Indian Politics & Poetry – Read the Story That Was Never Officially Written
             </h1>
@@ -55,7 +55,7 @@ export default function Hero1() {
           </div>
 
           {/* Book Image */}
-          <div className="md:w-1/2 flex justify-center items-end md:mt-0 h-[63vh]">
+          <div className="md:w-1/2 w-full flex justify-center items-end md:mt-20 h-[63vh]">
             <Image
               src="/bookmockup.png"
               alt="book cover"
